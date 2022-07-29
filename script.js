@@ -12,7 +12,7 @@ async function getProductData(products){
             sessionStorage.clear();
             loading.classList.add("display");
 
-    let data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json");
+    let data = await fetch("https://makeup-api.herokuapp.com/api/v1/products.json");
     
     products = await data.json();
     
