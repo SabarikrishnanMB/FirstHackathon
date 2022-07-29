@@ -30,8 +30,7 @@ async function getProductData(products){
     }
 
     products.slice((currentPage-1)*9,currentPage*9).forEach((product) => {
-        const card = `
-        <div class="card">
+        const card = `<div class="card">
         <img class="product-image" src='${product["api_featured_image"]}' alt='${product["name"]}'>
         <div class="card-content">
           <p class="product-brand">${product["brand"]}</p>
