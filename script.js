@@ -36,7 +36,7 @@ async function getProductData(products){
         <div class="card-content">
           <p class="product-brand">${product["brand"]}</p>
           <h3 class="product-name">${product["name"]}</h3>
-          <p class="product-price">${product["price"]}</p>
+          <p class="product-price">${product["price_sign"]}${product["price"]}</p>
             <a class="button" href='${product["product_link"]}' target="_blank"> BUY </a>
           <div class="product-description"><p>${product["description"]}</p></div>
         </div>
